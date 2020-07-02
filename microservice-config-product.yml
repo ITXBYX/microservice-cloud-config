@@ -1,6 +1,7 @@
 ﻿spring:
   profiles:
     active: dev
+---    
 server:
   port: 8001
 mybatis:
@@ -31,7 +32,7 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
-
+---
 server:
   port: 8001
 mybatis:
